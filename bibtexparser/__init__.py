@@ -24,12 +24,13 @@ And writing::
 __all__ = [
     'loads', 'load', 'dumps', 'dump', 'bibdatabase',
     'bparser', 'bwriter', 'bibtexexpression', 'latexenc', 'customization',
+    'parse_doi',
 ]
 __version__ = '1.1.0'
 
 import sys
 
-from . import bibdatabase, bibtexexpression, bparser, bwriter, latexenc, customization
+from . import bibdatabase, bibtexexpression, bparser, bwriter, latexenc, customization, parse_doi
 
 
 def loads(bibtex_str, parser=None):
